@@ -2,7 +2,7 @@
 
 use serde::Deserialize;
 
-use hocon::HoconLoader;
+use hocon::{Error, HoconLoader};
 
 #[test]
 fn deserialize_struct_simple_path() {
@@ -52,7 +52,7 @@ fn deserialize_struct_missing_field() {
 
     assert_eq!(
         format!("{:?}", doc),
-        r#"Err(Deserialization { message: ".: missing field `a`" })"#
+        r#"Err(Deserialization { message: "missing field `a`" })"#
     );
 }
 
