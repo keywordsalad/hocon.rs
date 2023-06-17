@@ -1,7 +1,5 @@
 # HOCON.rs [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Realease Doc](https://docs.rs/hocon/badge.svg)](https://docs.rs/hocon) [![Crate](https://img.shields.io/crates/v/hocon.svg)](https://crates.io/crates/hocon)
 
-The API docs for the master branch are published [here](https://mockersf.github.io/hocon.rs/).
-
 Parse HOCON configuration files in Rust following the
 [HOCON Specifications](https://github.com/lightbend/config/blob/master/HOCON.md).
 

@@ -9,7 +9,7 @@ errors=()
 
 rm -rf tmp
 mkdir tmp
-git clone https://github.com/mockersf/hocon-test-suite.git tmp/
+git clone https://github.com/keywordsalad/hocon-test-suite.git tmp/
 mkdir tmp/output
 
 for conf_file in tmp/hocon/*

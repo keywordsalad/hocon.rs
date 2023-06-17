@@ -100,7 +100,7 @@
 //! ## Reading from a file
 //!
 //! Example file:
-//! [tests/data/basic.conf](https://raw.githubusercontent.com/mockersf/hocon.rs/master/tests/data/basic.conf)
+//! [tests/data/basic.conf](https://raw.githubusercontent.com/keywordsalad/hocon.rs/master/tests/data/basic.conf)
 //!
 //! ```rust
 //! use hocon::{HoconLoader,Error};
@@ -119,7 +119,7 @@
 //! ## Reading from several documents
 //!
 //! Example file:
-//! [tests/data/basic.conf](https://raw.githubusercontent.com/mockersf/hocon.rs/master/tests/data/basic.conf)
+//! [tests/data/basic.conf](https://raw.githubusercontent.com/keywordsalad/hocon.rs/master/tests/data/basic.conf)
 //!
 //! ```rust
 //! use hocon::{HoconLoader,Error};
@@ -304,7 +304,7 @@ impl HoconLoader {
     /// # Example HOCON document
     ///
     /// ```no_test
-    /// include url("https://raw.githubusercontent.com/mockersf/hocon.rs/master/tests/data/basic.conf")
+    /// include url("https://raw.githubusercontent.com/keywordsalad/hocon.rs/master/tests/data/basic.conf")
     /// ```
     ///
     /// with url include:
@@ -666,10 +666,10 @@ mod tests {
         .unwrap();
         assert_eq!(doc["d"], Hocon::BadValue(super::Error::MissingKey));
         assert_eq!(
-            doc["https://raw.githubusercontent.com/mockersf/hocon.rs/master/tests/data/basic.conf"],
+            doc["https://raw.githubusercontent.com/keywordsalad/hocon.rs/master/tests/data/basic.conf"],
             Hocon::BadValue(
                 super::Error::Include {
-                    path: String::from("https://raw.githubusercontent.com/mockersf/hocon.rs/master/tests/data/basic.conf")
+                    path: String::from("https://raw.githubusercontent.com/keywordsalad/hocon.rs/master/tests/data/basic.conf")
                 }
             )
         );
