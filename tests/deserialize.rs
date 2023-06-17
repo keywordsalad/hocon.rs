@@ -2,7 +2,7 @@
 
 use serde::Deserialize;
 
-use hocon::{Error, HoconLoader};
+use hocon::HoconLoader;
 
 #[test]
 fn deserialize_struct_simple_path() {
